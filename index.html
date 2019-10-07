@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <title>Github Repo Search</title>
+    </head>
+
+    <body>
+        <header>
+            <img src="img/Octocat.png" />
+            <h1>Github Repo Search</h1>
+        </header>
+        <!-- user interface -->
+        <div id="user-interface">
+            <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                autocomplete="off"
+            />
+            <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                autocomplete="off"
+            />
+            <input
+                type="text"
+                name="user-to-search"
+                placeholder="User to search"
+                autocomplete="off"
+            />
+            <button id="go-button">G O !</button>
+        </div>
+
+        <!-- show results -->
+        <div id="results-container"></div>
+
+        <!-- handlebars templates -->
+        <script id="repos" type="text/x-handlebars-template">
+            {{#repos}}
+            <div class="container">
+                <div class="card">
+                    <img src={{owner/avatar_url}}>
+                    <h2>{{full_name}}</h2>
+                </div>
+            </div>
+            {{/repos}}
+        </script>
+
+        <script id="commits" type="text/x-handlebars-template">
+            {{#commits}}
+                <div class="commit-messages">
+                    <ul><li>{{commit.message}}</li></ul>
+                </div>
+            {{/commits}}
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

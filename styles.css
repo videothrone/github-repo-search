@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f3cbb2;
+}
+
+/* header */
+
+header {
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    width: 130px;
+    height: 130px;
+    padding: 15px;
+}
+
+header h1 {
+    padding-top: 40px;
+    font-size: 45px;
+}
+
+/* user-interface */
+
+#user-interface {
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 10px;
+    font-size: 17px;
+    border: 3px solid white;
+    width: 20%;
+    background: #f1f1f1;
+    margin: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#go-button {
+    font-family: "Montserrat", sans-serif;
+    margin: 5px;
+    padding: 10px;
+    font-size: 17px;
+    border: 3px solid white;
+    width: 12%;
+    height: 46px;
+    background: #9cdaef;
+    cursor: pointer;
+}
+
+#go-button:hover {
+    background-color: #9cdaef;
+    color: #b76257;
+    box-shadow: inset 3px 3px 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+#go-button:focus {
+    outline: none;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+.container {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.commit-messages {
+    padding: 6px;
+}
+
+.commit-messages li {
+    padding: 6px;
+}
+
+.commit-messages ul {
+    max-width: 250px;
+    word-wrap: break-word;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+h2 {
+    padding: 20px 10px;
+    background-color: #ff5c5b;
+    font-size: 13.5px;
+    text-align: center;
+}
+
+#results-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    color: white;
+    margin: 20px;
+    max-width: 260px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.22);
+    padding: 5px;
+}
+
+.card:hover {
+    background-color: antiquewhite;
+}
