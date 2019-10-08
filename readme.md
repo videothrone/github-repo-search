@@ -6,7 +6,11 @@
 
 ## Siteflow
 
-![Github Repo Search](siteflow.gif)
+[![Github Repo Search](siteflow.gif)](https://videothrone.github.io/github-repo-search/)
+
+## Demo
+
+https://videothrone.github.io/github-repo-search/
 
 ## Tech
 
